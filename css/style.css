@@ -7,6 +7,19 @@
     box-sizing: border-box;
 }
 
+/* Styles généraux */
+.btn{
+    display: inline-block;
+    background: #df2020;
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
 /* ---- NavBar Style ----------*/
 
 .navbar{
@@ -99,5 +112,159 @@
     }
     .navbar .logo a{
         font-size: 16px;
+    }
+}
+
+
+
+/* Style du header */
+
+
+.header{
+    padding: 50px 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left{
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+}
+.header-left h4{
+    font-size: 27px;
+    color: #212245;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.header-left .main-text h2{
+    font-size: 40px;
+    color: #df2020;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.header-left .main-text h3{
+    font-size: 30px;
+    color: #212245;
+}
+.header-left p{
+    font-size: 20px;
+    color: #212245;
+}
+.cmd-btn{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
+}
+.header-left .icons-box{
+    display: flex;
+    gap: 40px;
+}
+.header-left .icons-box .box{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.header-left .icons-box .box span{
+    font-size: 13px;
+    color: #212245;
+    font-weight: 500;
+}
+.header-left .icons-box .box div{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #df2020;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header .header-right img{
+    height: 550px;
+    margin: -40px -50px 0 0;
+}
+
+/* Media queries pour le header */
+
+@media(max-width: 992px){
+    .header{
+        padding: 40px 4%;
+    }
+    .header-left{
+        gap: 30px;
+    }
+    .header-left h4{
+        font-size: 20px;
+    }
+    .header-left .main-text h2{
+        font-size: 30px;
+    }
+    .header-left .main-text h3{
+        font-size: 22px;
+    }
+    .header-left p{
+        font-size: 16px;
+    }
+    .cmd-btn{
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 80%;
+    }
+    .header-left .icons-box .box div{
+        flex: none;
+    }
+
+    .header .header-right img{
+        height: 400px;
+    }
+}
+
+@media(max-width: 768px){
+    .header{
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+    }
+    .header-left .main-text h2{
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    .header-left h4{
+        font-size: 23px;
+        font-weight: bold;
+    }
+    .header-left .main-text h3{
+        font-size: 18px;
+    }
+    .header-left p{
+        color: #333;
+        font-weight: 600;
+    }
+    .cmd-btn{
+        width: 80%;
+        margin: 0 auto;
+        padding: 14px 20px;
+        border-radius: 40px;
+        font-size: 20px;
+    }
+    .header-left .icons-box{
+        margin: 0 auto 30px;
+        gap: 30px;
+    }
+    .header-left .icons-box .box{
+        gap: 5px;
+    }
+    .header-left .icons-box .box span{
+        font-size: 13px;
+    }
+    .header .header-right img{
+        padding-top: 30px;
+        margin: 0px -30px 0 0;
     }
 }
