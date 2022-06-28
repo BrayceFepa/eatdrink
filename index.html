@@ -1,91 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Font awesome link cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Normalize CSS link -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
 
     <!-- custom CSS link -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Eat & Drink</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/res-logo.png" alt="" />
+        <a href="">eat & drink</a>
+      </div>
+
+      <div class="nav-link">
+        <a href="">accueil</a>
+        <a href="">repas</a>
+        <a href="">panier</a>
+        <a href="">contact</a>
+      </div>
+
+      <div class="icons">
+        <div class="fa fa-shopping-basket panier">
+          <div id="number">0</div>
+        </div>
+        <a href="" class="fa fa-user"></a>
+        <div class="fa fa-bars" id="navBtn"></div>
+      </div>
+    </nav>
+
     <header>
-        <nav class="navbar">
+      <div class="header">
+        <div class="header-left">
+          <span>Commande Rapide et Express</span>
 
-            <div class="logo">
-                <img src="images/res-logo.png" alt="">
-                <a href="">eat & drink</a>
+          <div class="main-text">
+            <span>Avez vous faim ?</span>
+            <span>Attendez juste la nourriture à votre porte</span>
+          </div>
+
+          <p>
+            Jamais trop de frites, Une pépite de poulet est ce qu'il vous faut,
+            Savourez la saveur C'est le jour de la triche, n'aie pas peur
+          </p>
+
+          <a href="" class="btn cmd-btn"
+            >commandez maintenant <i class="fa fa-angle-right"></i>
+          </a>
+
+          <div class="icons-box">
+            <div class="box">
+              <div class="fa fa-car"></div>
+              <span>Livraison gratuite</span>
             </div>
 
-            <div class="nav-link">
-                <a href="">accueil</a>
-                <a href="">repas</a>
-                <a href="">panier</a>
-                <a href="">contact</a>
+            <div class="box">
+              <div class="fa fa-check-circle"></div>
+              <span>Paiement 100% sécurisé</span>
             </div>
-
-            <div class="icons">
-                <div class="fa fa-shopping-basket panier">
-                    <div id="number">0</div>
-                </div>
-                <a href="" class="fa fa-user"></a>
-                <div class="fa fa-bars" id="navBtn"></div>
-            </div>
-
-        </nav>
-
-
-
-        <div class="header">
-
-            <div class="header-left">
-                <h4>Commande Rapide et Express</h4>
-
-                <div class="main-text">
-                    <h2>Avez vous faim ?</h2>
-                    <h3>Attendez juste la nourriture à votre porte</h3>
-                </div>
-
-                <p>Jamais trop de frites, Une pépite de poulet est ce qu'il vous faut, Savourez la saveur C'est le jour de la triche, n'aie pas peur</p>
-
-                <a href="" class="btn cmd-btn">commandez maintenant <i class="fa fa-angle-right"></i> </a>
-
-                <div class="icons-box">
-                    <div class="box">
-                        <div class="fa fa-car"></div>
-                        <span>Livraison gratuite</span>
-                    </div>
-
-                    <div class="box">
-                        <div class="fa fa-check-circle"></div>
-                        <span>Paiement 100% sécurisé</span>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="header-right">
-                <img src="images/hero.png" alt="">
-            </div>
-
+          </div>
         </div>
 
+        <div class="header-right">
+          <img src="images/hero.png" alt="" />
+        </div>
+      </div>
     </header>
 
+    <main>
+      <!-- Category section starts -->
+      <section class="Category">
+        <div class="Category-row">
+          <div class="Category-col">
+            <img src="images/category-01.png" alt="" />
+            <spanspan>Burger</spanspan>
+          </div>
 
-</body>
+          <div class="Category-col">
+            <img src="images/category-02.png" alt="" />
+            <span>Pizza</span>
+          </div>
 
+          <div class="Category-col">
+            <img src="images/category-03.png" alt="" />
+            <span>spaghetti sauté</span>
+          </div>
+
+          <div class="Category-col">
+            <img src="images/category-04.png" alt="" />
+            <span>Viande</span>
+          </div>
+        </div>
+      </section>
+      <!-- Menu section ends -->
+
+      <!-- text division starts -->
+
+      <div class="txt">
+        <div>Ce que nous servons</div>
+        <div>Restez simplement à la maison</div>
+        <div>Nous allons prendre soin de vous</div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+          dolorem!
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+          Accusantium
+        </div>
+      </div>
+
+      <!-- text division ends -->
+
+      <!-- features section starts -->
+
+      <section class="features">
+        <div class="box-container">
+          <div class="box">
+            <div class="image">
+              <img src="images/service-01.png" alt="" />
+            </div>
+            <h2>Livraison rapide</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Delectus, dolorum.
+            </p>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img src="images/service-03.png" alt="" />
+            </div>
+            <h2>super repas</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Delectus, dolorum.
+            </p>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img src="images/service-02.png" alt="" />
+            </div>
+            <h2>ramassage express</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Delectus, dolorum.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- features section ends -->
+
+      <!-- Popular food section starts -->
+
+      <section class="popular-foods">
+        <h2>popular foods</h2>
+
+        <div class="type">
+          <span class="all">All</span>
+
+          <div class="type-box">
+            <img src="images/hamburger.png" alt="" />
+            <span>burger</span>
+          </div>
+
+          <div class="type-box">
+            <img src="images/pizza.png" alt="" />
+            <span>pizza</span>
+          </div>
+
+          <div class="type-box">
+            <img src="images/soda.png" alt="" />
+            <span id="soda">soda</span>
+          </div>
+        </div>
+
+        <div class="foods">
+
+          <div class="food-row">
+
+            <div class="food-card">
+              <img src="images/product_2.3.jpg" alt="" />
+              <h4>chicken burger</h4>
+              <div class="card-foot">
+                <h3>3000 fcfa</h3>
+                <a href="" class="btn f-btn">Add to cart</a>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <img src="images/product_01.1.jpg" alt="" />
+              <h4>royal cheese burger</h4>
+              <div class="card-foot">
+                <h3>1500 fcfa</h3>
+                <a href="" class="btn f-btn">Add to cart</a>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <img src="images/product_01.3.jpg" alt="" />
+              <h4>classic hamburger</h4>
+              <div class="card-foot">
+                <h3>1500 fcfa</h3>
+                <a href="" class="btn f-btn">Add to cart</a>
+              </div>
+            </div>
+        
+
+            <div class="food-card">
+                <img src="images/product_01.jpg" alt="" />
+                <h4>cheese burger</h4>
+                <div class="card-foot">
+                    <h3>1500 fcfa</h3>
+                    <a href="" class="btn f-btn">Add to cart</a>
+                </div>
+            </div>
+            
+            <div class="food-card">
+                <img src="images/product_2.1.jpg" alt="" />
+                <h4>vegetarian pizza</h4>
+                <div class="card-foot">
+                    <h3>4500 fcfa</h3>
+                    <a href="" class="btn f-btn">Add to cart</a>
+                </div>
+            </div>
+            
+            <div class="food-card">
+                <img src="images/product_2.2.jpg" alt="" />
+                <h4>chicken burger</h4>
+                <div class="card-foot">
+                    <h3>3000 fcfa</h3>
+                    <a href="" class="btn f-btn">Add to cart</a>
+                </div>
+            </div>
+
+        
+        
+           
+        
+        </div>
+
+
+        </div>
+      </section>
+
+      <!-- Popular food section ends -->
+    </main>
+  </body>
 </html>
