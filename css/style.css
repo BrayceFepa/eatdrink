@@ -164,7 +164,12 @@ section{
     justify-content: center;
     gap: 15px;
     font-size: 18px;
+    transition: .5s;
 }
+.cmd-btn:hover{
+    background: #212245;
+}
+
 .header-left .icons-box{
     display: flex;
     gap: 40px;
@@ -285,6 +290,16 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+/* Animation pour fairer monter les menus */
+
+@keyframes movetop{
+    0% {
+       
+        bottom: 0;
+    }
 }
 
 .Category-col{
@@ -298,10 +313,18 @@ section{
     color: #212245;
     font-size: 18px;
     letter-spacing: 1px;
+    
+}
+
+.Category-col:hover{
+    animation: movetop .6s linear;
+    position: relative;
+    bottom: 15px;
 }
 .Category-col img{
     transform: scale(0.8);
 }
+
 
 
 
@@ -485,7 +508,18 @@ main .txt div:nth-child(5){
 }
 
 
+
 /* Food section styling starts */
+
+
+/* Animation pour faire grossir les images */
+
+@keyframes size{
+    0%{
+        transform: scale(1);
+    }
+}
+
 
 
 .food-row{
@@ -495,7 +529,12 @@ main .txt div:nth-child(5){
     flex-flow: wrap;
 }
 .food-row .food-card img{
-    height: 150px;
+    height: 140px;
+}
+
+.food-row .food-card img:hover{
+    animation: size .5s linear;
+    transform: scale(1.2);
 }
 
 .food-row .food-card{
@@ -513,7 +552,12 @@ main .txt div:nth-child(5){
     text-transform: capitalize;
     color: #212245;
     font-size: 20px;
+    transition: .5s;
 }
+.food-row .food-card h4:hover{
+    color: #df2020;
+}
+
 .f-btn{
     font-size: 14px;
     padding: 10px 20px;
