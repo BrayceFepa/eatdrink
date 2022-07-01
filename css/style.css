@@ -552,7 +552,7 @@ main .txt div:nth-child(5){
     text-transform: capitalize;
     color: #212245;
     font-size: 20px;
-    transition: .5s;
+    transition: .6s;
 }
 .food-row .food-card h4:hover{
     color: #df2020;
