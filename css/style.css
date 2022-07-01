@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 /* Styles généraux */
 .btn{
     display: inline-block;
@@ -651,5 +652,175 @@ main .txt div:nth-child(5){
     }
     .drink .drink-card h3{
         font-size: 15px;
+    }
+}
+
+/* Styling the footer section */
+
+footer{
+    margin-top: 80px;
+    padding: 30px 50px;
+    background: #ffadadb9;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+footer .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+}
+footer .info .desc{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+footer .info .desc .logo{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+}
+footer .info .desc .logo img{
+    height: 70px;
+}
+.desc .logo a{
+    text-decoration: none;
+    color: #212245;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.desc p{
+    font-size: 16px;
+    letter-spacing: .6px;
+    color: #212245;
+}
+
+.info .planning{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+.info .planning>*{
+    display: block;
+}
+.info .planning>:nth-child(1){
+    font-weight: bold;
+    font-size: 15px;
+    color: #212245;
+}
+.info .planning>:nth-child(2){
+    font-weight: bold;
+    font-size: 15px;
+    color: #212245;
+    margin-top: 12px;
+}
+.info .planning>:nth-child(3){
+    color: #212245;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.info .planning>:nth-child(4){
+    font-weight: bold;
+    font-size: 15px;
+    color: #212245;
+    margin-top: 12px;
+}
+.info .planning>:nth-child(5){
+    color: #212245;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.info .contact{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    
+}
+.info .contact>:nth-child(1){
+    font-weight: bold;
+    font-size: 17px;
+    color: #212245;
+}
+.info .contact>:nth-child(2){
+    font-weight: bold;
+    font-size: 15px;
+    color: #212245;
+    margin-top: 12px;
+}
+.info .contact>:nth-child(3){
+    font-weight: bold;
+    font-size: 15px;
+    color: #212245;
+    margin-top: 15px;
+}
+.info .contact>:nth-child(4){
+    font-weight: bold;
+    font-size: 15px;
+    color: #212245;
+    margin-top: 10px;
+}
+
+.info .newsletter>*{
+    display: block;
+}
+.info .newsletter>:nth-child(1){
+    font-weight: bold;
+    font-size: 17px;
+    color: #212245;
+}
+.info .newsletter>:nth-child(2){
+    font-size: 15px;
+    color: #212245;
+    margin-top: 10px;
+}
+.info .newsletter input{
+    width: 95%;
+    height: 40px;
+    border: 1px solid #333;
+    outline: none;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #46202046;
+    width: 100%;
+}
+
+.follow span{
+    color: #212245;
+}
+.follow div{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #df2020;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Media queries for the footer */
+
+@media(max-width: 768px){
+    footer .info{
+        flex-flow: column;
+        align-items: flex-start;
     }
 }
