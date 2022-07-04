@@ -616,7 +616,7 @@ main .txt div:nth-child(5){
     }
     .food-card img{
         transform: scale(0.6);
-        margin-bottom: -10px;
+        margin-bottom: 0px;
     }
     .food-row .food-card h4{
         font-size: 14px;
@@ -635,7 +635,7 @@ main .txt div:nth-child(5){
         padding: 15px 20px;
         gap: 7px;
         width: 95%;
-        margin: 0 auto;
+        margin: 28px auto;
     }
     .popular-foods .type span{
         font-size: 9px;
@@ -653,6 +653,11 @@ main .txt div:nth-child(5){
     .popular-foods{
         padding: 0;
     }
+
+    .food-row .food-card img:hover{
+        animation: size .5s linear;
+        transform: scale(.7);
+}
    
 
     .popular-foods .hoot-pizza .food-card{
