@@ -656,7 +656,7 @@ main .txt div:nth-child(5){
 
     .food-row .food-card img:hover{
         animation: size .5s linear;
-        transform: scale(.71);
+        transform: scale(.7);
 }
    
 
