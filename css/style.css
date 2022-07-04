@@ -33,7 +33,7 @@ section{
     padding: 20px 7%;
 }
 .navbar .logo img{
-    height: 70px;
+    width: 100%;
 }
 .navbar a{
     text-decoration: none;
@@ -603,12 +603,35 @@ main .txt div:nth-child(5){
     }
     .food-row .food-card{
         flex-basis: 45%;
-        margin: 20px 10px;
-        min-width: 40%;
+        margin: 20px 5px;
+        min-width: 100px;
+        padding: 0px 5px;
+        gap: 0px;
+    }
+    .food-card img{
+        transform: scale(0.6);
+        margin-bottom: -10px;
+    }
+    .food-row .food-card h4{
+        font-size: 14px;
+    }
+    .card-foot h3{
+        font-size: 12px;
+    }
+    .card-foot{
+        margin-bottom: 20px;
+    }
+    .f-btn{
+        font-size: 10px;
+        padding: 6px 10px;
     }
     .popular-foods .type{
-        padding: 15px;
+        padding: 15px 18px;
         gap: 10px;
+    }
+    .popular-foods .type .all{
+        padding: 8px 15px;
+        margin-right: 6px;
     }
     .type-box img{
         transform: scale(0.8);
@@ -622,21 +645,28 @@ main .txt div:nth-child(5){
 
     .popular-foods .hoot-pizza .food-card{
         flex-basis: 70%;
-        padding: 50px;
+        min-width: 310px;
+        padding: 40px 30px;
+        gap: 15px;
     }
 
     .popular-foods .hoot-pizza .food-card img{
         transform: scale(1.4);
-        margin-bottom: 30px;
+        margin: 30px 0;
+        text-align: center;
     }
     .popular-foods .hoot-pizza .food-card h4{
-        font-size: 20px;
+        font-size: 18px;
+        text-align: center;
     }
 
     .popular-foods .hoot-pizza .food-card .f-btn{
         padding: 11px 16px;
         font-size: 14px;
         border-radius: 20px;
+    }
+    .popular-foods .hoot-pizza .food-card .card-foot h3{
+        font-size: 18px;
     }
 
 }
@@ -679,12 +709,13 @@ main .txt div:nth-child(5){
     }
     .drink .food-row .drink-card{
         width: 60%;
+        min-width: 300px;
         margin: 20px 0;
         padding: 10px;
     }
     .drink .drink-card img{
-        height: 230px;
-        margin-bottom: 20px;
+        height: 260px;
+        margin-bottom: 10px;
     }
     .drink .drink-card{
         margin: 0 5px;
@@ -695,7 +726,10 @@ main .txt div:nth-child(5){
         font-size: 13px;
     }
     .drink .drink-card h3{
-        font-size: 15px;
+        font-size: 17px;
+    }
+    .drink .drink-card h4{
+        font-size: 20px;
     }
 }
 
