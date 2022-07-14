@@ -920,3 +920,22 @@ footer .info .desc .logo img{
     }
 }
 
+
+/* Media queries pour les ecrans tres larges */
+
+@media(min-width: 1460px){
+    body{
+        padding: 0 20%;
+        background: #eee;
+    }
+
+    body>div{
+        background: #fff;
+    }
+}
+
+@media(min-width: 1700px){
+    body{
+        padding: 0 20%;
+    }
+}
