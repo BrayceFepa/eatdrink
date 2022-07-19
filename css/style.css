@@ -928,6 +928,7 @@ footer .info .desc .logo img{
     }
 }
 
+
 .inscription-header{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(../images/product_01.1.jpg) ;
     background-position: center;
@@ -1100,8 +1101,22 @@ form input[type="radio"]{
 
 
 
+
+/* Media queries pour les ecrans tres larges */
+
+
 @media(min-width: 1460px){
     body{
-        padding: 20%;
+        padding: 0 20%;
+    }
+
+    body>div{
+        background: #fff;
+    }
+}
+
+@media(min-width: 1700px){
+    body{
+        padding: 0 20%;
     }
 }
