@@ -543,7 +543,7 @@ main .txt div:nth-child(5){
     flex-flow: wrap;
 }
 .food-row .food-card img{
-    height: 140px;
+    height: 120px;
 }
 
 .food-row .food-card img:hover{
@@ -557,19 +557,26 @@ main .txt div:nth-child(5){
     justify-content: space-between;
     align-items: center;
     gap: 15px;
-    flex-basis: 31%;
+    flex-basis: 22%;
     border: 1px solid #ff8383;
-    padding: 30px 15px;
+    padding: 20px 10px;
     margin: 20px 0;
 }
 .food-row .food-card h4{
     text-transform: capitalize;
     color: #212245;
-    font-size: 20px;
+    font-size: 18px;
     transition: .6s;
 }
 .food-row .food-card h4:hover{
     color: #df2020;
+}
+.food-row .food-card .card-foot h3{
+    font-size: 15px;
+}
+.food-row .food-card .card-foot .f-btn{
+    font-size: 12px;
+    padding: 8px 15px;
 }
 
 .f-btn{
@@ -607,6 +614,7 @@ main .txt div:nth-child(5){
     }
     .food-row .food-card{
         padding: 25px 10px;
+        flex-basis: 31%;
     }
 }
 
@@ -627,17 +635,17 @@ main .txt div:nth-child(5){
         margin-bottom: 0px;
     }
     .food-row .food-card h4{
-        font-size: 14px;
+        font-size: 12px;
     }
     .card-foot h3{
-        font-size: 12px;
+        font-size: 11px;
     }
     .card-foot{
         margin-bottom: 20px;
     }
     .f-btn{
-        font-size: 10px;
-        padding: 6px 10px;
+        font-size: 11px;
+        padding: 5px 8px;
     }
     .popular-foods .type{
         padding: 15px 20px;

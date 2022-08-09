@@ -1,4 +1,4 @@
-fetch('./php/repas.php', {
+fetch('http://localhost:3004/products', {
     method: 'GET',
 })
 .then(response => response.json())

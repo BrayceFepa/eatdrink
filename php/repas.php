@@ -94,4 +94,5 @@ $data = array(
 
 );
 
-echo json_encode($data);
+$json = json_encode($data);
+file_put_contents('repas.json', $json);
